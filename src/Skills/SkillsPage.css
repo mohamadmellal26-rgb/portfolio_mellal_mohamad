@@ -1,0 +1,168 @@
+/* تنسيقات صفحة المهارات الداكنة والنظيفة */
+.skills-page-wrapper {
+  min-height: 100vh;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.skills-section {
+  padding: 100px 0 60px 0;
+  border-top: 2px solid #59ff00;
+}
+
+.skills-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.skills-top-bar {
+  margin-bottom: 24px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #444444;
+  border-color: #59ff00;
+}
+
+.skills-header {
+  margin-bottom: 48px;
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+}
+
+.title-underline-left {
+  width: 50px;
+  height: 3px;
+  background-color: #59ff00;
+  margin-top: 12px;
+  border-radius: 2px;
+}
+
+/* الأقسام والمواضيع */
+.categories-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.category-block {
+  background-color: #333333;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.category-header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 12px;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+
+.category-description {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* شبكة كروت المهارات */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.skill-card:hover {
+  border-color: rgba(89, 255, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.skill-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.skill-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.skill-level {
+  font-size: 0.78rem;
+  color: #59ff00;
+  margin-top: 2px;
+}
+
+/* التجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .category-block {
+    padding: 20px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

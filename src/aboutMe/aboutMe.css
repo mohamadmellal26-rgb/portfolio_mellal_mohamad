@@ -1,0 +1,205 @@
+/* قسم عني - تصميم نظيف ومتناسق مع خلفية #333 وإزالة الألوان الزرقاء بالكامل */
+.about-section {
+  padding: 100px 0;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-top: 2px solid #59ff00;
+}
+
+.about-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* شريط أزرار التنقل العلوي وزر الرجوع وعلم الجزائر */
+.about-top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #444444;
+  border-color: #59ff00;
+}
+
+/* حاوية علم الجزائر كصورة بارزة وحجم واضح */
+.algeria-flag-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  background-color: #333333;
+  border: 1px solid rgba(89, 255, 0, 0.3);
+  border-radius: 8px;
+}
+
+.algeria-flag-img {
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* رأس القسم */
+.about-header {
+  margin-bottom: 48px;
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+}
+
+.title-underline-left {
+  width: 50px;
+  height: 3px;
+  background-color: #59ff00;
+  margin-top: 12px;
+  border-radius: 2px;
+}
+
+/* شبكة التوزيع */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+.about-description strong {
+  color: #ffffff;
+}
+
+/* الإحصائيات السريعة */
+.about-stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* بطاقة المهارات والتقنيات */
+.tech-stack-card {
+  background-color: #333333;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tech-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-category-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}

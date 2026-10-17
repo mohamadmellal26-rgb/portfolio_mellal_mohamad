@@ -1,0 +1,179 @@
+/* قسم المشاريع - تصميم نظيف مع حد علوي أخضر */
+.works-section {
+  padding: 100px 0;
+  background-color: #222;
+  color: #ffffff;
+  overflow: hidden;
+  border-top: 2px solid #59ff00;
+}
+
+.works-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* رأس القسم مرن (يحتوي العنوان وأزرار التنقل) */
+.works-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+}
+
+.title-underline-left {
+  width: 50px;
+  height: 3px;
+  background-color: #59ff00;
+  margin-top: 12px;
+  border-radius: 2px;
+}
+
+/* أزرار التحريك الأفقية */
+.scroll-nav-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.scroll-btn {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #444444;
+}
+
+/* حاوية التمرير الأفقي ScrollX */
+.projects-scrollx-container {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #333333;
+}
+
+/* تخصيص شريط التمرير لمتصفحات كروم وسفاري */
+.projects-scrollx-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-scrollx-container::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.projects-scrollx-container::-webkit-scrollbar-thumb {
+  background-color: #555555;
+  border-radius: 4px;
+}
+
+/* بطاقة المشروع مع مؤشر الماوس (cursor: pointer) */
+.project-card-horizontal {
+  min-width: 360px;
+  max-width: 380px;
+  background-color: #333333;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* حاوي الصورة */
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background-color: #1f1f1f;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* محتوى البطاقة */
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tag-item {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.project-description {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .works-header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .scroll-nav-btns {
+    display: none;
+  }
+}
